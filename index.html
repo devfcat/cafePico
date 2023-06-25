@@ -19,17 +19,13 @@
         border: 6px solid brown;
       }
 
-      #iconBox {
-        width: 200px;
-        height: 200px;
-
-        margin: 0 auto;
-        margin-top: 4rem;
-      }
-
       .windows {
-        width: 100%;
-        height: 700px;
+        display: flex;
+        justify-content: center;
+      }
+      .windows > div {
+        display: flex;
+        flex-direction: column;
       }
 
       a {
@@ -38,6 +34,7 @@
 
       .btn {
         width: 200px;
+        border: 0;
 
         background-color: sandybrown;
         margin: 1.4rem auto;
@@ -71,12 +68,14 @@
 
       footer {
         background-color: sandybrown;
-        height: 130px;
+        height: 8.125rem;
         width: 100%;
         color: white;
         font-size: 1rem;
         padding: 2rem 0;
         text-align: center;
+        position: absolute;
+        bottom: 0;
       }
     </style>
   </head>
@@ -93,10 +92,11 @@
 
         <div id="title">Cafe Pico</div>
         <a href="login.html">
-          <div class="btn">Start</div>
+          <button class="btn">Start</button>
         </a>
-
-        <div class="btn">How to Play</div>
+        <a href="">
+          <button class="btn">How to Play</button>
+        </a>
       </div>
     </div>
 
