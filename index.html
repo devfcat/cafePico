@@ -1,115 +1,110 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Cafe Pico</title>
+    <link rel="stylesheet" href="customMouse.css" />
 
     <style>
-        #icon {
-            width: 200px;
-            height: 200px;
-            border: 6px solid sandybrown;
-            border-radius: 20%;
-        }
+      body {
+        cursor: none;
+      }
+      #icon {
+        width: 200px;
+        height: 200px;
+        border: 6px solid sandybrown;
+        border-radius: 20%;
+      }
 
-        #icon:hover {
-            transition: 0.5s;
-            border: 6px solid brown;
-        }
+      #icon:hover {
+        transition: 0.5s;
+        border: 6px solid brown;
+      }
 
-        #iconBox {
-            width: 200px;
-            height: 200px;
+      #iconBox {
+        width: 200px;
+        height: 200px;
 
-            margin: 0 auto;
-            margin-top: 4rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+      }
 
-        }
+      .windows {
+        width: 100%;
+        height: 700px;
+      }
 
-        .windows {
-            width: 100%;
-            height: 700px;
-        }
+      a {
+        text-decoration-line: none;
+      }
 
-        a {
-            text-decoration-line: none;
-        }
+      .btn {
+        width: 200px;
 
-        .btn {
-            width: 200px;
+        background-color: sandybrown;
+        margin: 1.4rem auto;
+        text-align: center;
+        border-radius: 50px;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0.9rem 0;
+        cursor: pointer;
+      }
 
-            background-color: sandybrown;
-            margin: 1.4rem auto;
-            text-align: center;
-            border-radius: 50px;
-            color: white;
-            font-weight: 500;
-            font-size: 1.2rem;
-            padding: 0.9rem 0;
-            cursor: pointer;
-        }
+      .btn:hover {
+        transition: 0.5s;
+        padding: 1.2rem 0;
+        border: 5px solid brown;
+      }
 
-        .btn:hover {
-            transition: 0.5s;
-            padding: 1.2rem 0;
-            border: 5px solid brown;
-        }
+      #title {
+        text-align: center;
+        margin: 2rem 0;
+        color: sandybrown;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
 
+      #title:hover {
+        transition: 0.5s;
+        color: brown;
+      }
 
-        #title {
-            text-align: center;
-            margin: 2rem 0;
-            color: sandybrown;
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-
-        #title:hover {
-            transition: 0.5s;
-            color: brown;
-        }
-
-        footer {
-            background-color: sandybrown;
-            height: 130px;
-            width: 100%;
-            color: white;
-            font-size: 1rem;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
+      footer {
+        background-color: sandybrown;
+        height: 130px;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+        padding: 2rem 0;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="customCursor"></div>
+    <script src="mousemove.js"></script>
+
     <div class="windows">
-        <div>
-            <div id="iconBox">
-                <img src="img/icon.jpg" id="icon">
-            </div>
-
-            <div id="title">Cafe Pico</div>
-            <a href="login.html">
-                <div class="btn">
-                    Start
-                </div>
-            </a>
-
-            <div class="btn">
-                How to Play
-            </div>
+      <div>
+        <div id="iconBox">
+          <img src="img/icon.jpg" id="icon" />
         </div>
+
+        <div id="title">Cafe Pico</div>
+        <a href="login.html">
+          <div class="btn">Start</div>
+        </a>
+
+        <div class="btn">How to Play</div>
+      </div>
     </div>
 
     <footer>
-        &#8226;&nbsp;Copyright © 2023 devfcat. All rights reserved.<br>
-        &#8226;&nbsp;E-Mail: devfcat@gmail.com
+      &#8226;&nbsp;Copyright © 2023 devfcat. All rights reserved.<br />
+      &#8226;&nbsp;E-Mail: devfcat@gmail.com
     </footer>
-
-</body>
-
+  </body>
 </html>
